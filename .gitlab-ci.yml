@@ -1,11 +1,16 @@
-image: ruby:2.1
+image: node:4.2.2
 
 pages:
+  cache:
+    paths:
+    - node_modules/
+
   script:
-  - gem install jekyll
-  - jekyll build -d public/
+  - npm install hexo-cli -g
+  - npm install
+  - hexo deploy
   artifacts:
     paths:
     - public
   only:
-  - master
+    - master
