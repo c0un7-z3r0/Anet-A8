@@ -12,6 +12,6 @@ pages:
   - hexo deploy
   artifacts:
     paths:
-    - public
+    - blog/public
   only:
     - master
