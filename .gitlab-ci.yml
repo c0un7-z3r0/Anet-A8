@@ -6,11 +6,12 @@ pages:
     - node_modules/
 
   script:
+  - cd blog
   - npm install hexo-cli -g
   - npm install
   - hexo deploy
   artifacts:
     paths:
-    - public
+    - blog/public
   only:
     - master
