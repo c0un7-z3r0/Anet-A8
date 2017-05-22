@@ -6,20 +6,19 @@ M117 Homing X/Y;
 G28 X0 Y0 ;move X/Y to min endstops
 M117 Homing Z;
 G28 Z0 ;move Z to min endstops
-M190 S0;
-M117 AutoLeveling;
-G29; auto level
 M117 Setting bed to [first_layer_bed_temperature] C;
 M190 S[first_layer_bed_temperature];
+M117 AutoLeveling;
+G29; auto level
 M117 Setting HE to [first_layer_temperature] C;
 M109 S[first_layer_temperature];
 M117 Cleaning...;
-G0 X0 Y5 F9000 ; Go to front
-G0 Z0.15 ; Drop to bed
+G0 X220 Y55 F9000 ; Go to the side
+G0 Z0.2 ; Drop to bed
 G92 E0 ; zero the extruded length
-G1 X40 E25 F500 ; Extrude 25mm of filament in a 4cm line
+G1 Y90 E25 F500 ; Extrude 25mm of filament in a 4cm line
 G92 E0 ; zero the extruded length
 G1 E-1 F500 ; Retract a little
-G1 X80 F4000 ; Quickly wipe away from the filament line
-G1 F9000;Put printing message on LCD screen
-M117 Printing...
+G1 Y160 F4000 ; Quickly wipe away from the filament line
+G1 Z20 F9000 ; Move a bit up to disloge blobs
+M117 Printing... ;Put printing message on LCD screen
