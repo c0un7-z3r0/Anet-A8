@@ -1,5 +1,5 @@
 # Anet A8
- A list of stuff for the Anet A8 I used
+ A list of stuff for the Anet A8
  
 ## Printable Upgrade Parts
  - **[Anet A8 E3D V6 Bowden MODULAR X Carriage V4 *BEST ONE*](https://www.thingiverse.com/thing:2193695)**
@@ -10,10 +10,13 @@
  - **[Anet a8 Frame Brace Front](https://www.thingiverse.com/thing:2371584)**
  - **[NEMA17 Basic Mount](https://www.thingiverse.com/thing:2056016)**
  - **[Anet A8 Bowden Extruder - The easy way](https://www.thingiverse.com/thing:2024308)**
- 
+ - **[Anet A8 corner rigidifier (stronger)](https://www.thingiverse.com/thing:2096876)**
 
 ## Planned Upgrades
  - **[Anet Nozzle Cleaning Brush Mount](https://www.thingiverse.com/thing:2355355)**
  - **[Digital Filament Counter use Arduino](https://www.thingiverse.com/thing:1946445)**
  - **[Anet A8 Fan Duct Spaceship edition](https://www.thingiverse.com/thing:2088006)**
  - **[Cooling Fan v5 and V10 Anet A8](https://www.thingiverse.com/thing:2287803)**
+
+## Other Useful Printable Stuff
+ - **[Tapered thread bowden coupling PC4-M6, PC4-M10](https://www.thingiverse.com/thing:1993384)**
