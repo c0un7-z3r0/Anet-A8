@@ -1,0 +1,4 @@
+[submodule "Firmware/Marlin"]
+	path = Firmware/Marlin
+	url = git@github.com:c0un7-z3r0/Marlin.git
+	branch = printers/Anet-A8
