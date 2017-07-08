@@ -4,6 +4,7 @@ git submodule update
 
 # copy configs into the right folder
 cd Firmware/Marlin/Marlin
+git reset --hard
 git pull origin printers/default
 
 rm -rf Configuration.h
