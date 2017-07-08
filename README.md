@@ -17,12 +17,11 @@
 ## Not In Use
 ### Printable Parts
  - **[Anet A8 - External lcd enclosure v3.2](https://www.thingiverse.com/thing:2005640)**
+ - **[Anet A8 Fan Duct Spaceship edition](https://www.thingiverse.com/thing:2088006)**
 
 ## Planned
  - **[Anet Nozzle Cleaning Brush Mount](https://www.thingiverse.com/thing:2355355)**
  - **[Digital Filament Counter use Arduino](https://www.thingiverse.com/thing:1946445)**
- - **[Anet A8 Fan Duct Spaceship edition](https://www.thingiverse.com/thing:2088006)**
- - **[Cooling Fan v5 and V10 Anet A8](https://www.thingiverse.com/thing:2287803)**
 
 ## Other Useful Printable Stuff
  - **[Tapered thread bowden coupling PC4-M6, PC4-M10](https://www.thingiverse.com/thing:1993384)**
