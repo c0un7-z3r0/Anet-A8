@@ -9,8 +9,8 @@ git pull origin printers/default
 
 rm -rf Configuration.h
 rm -rf Configuration_adv.h
-cp my_configuration_files/Anet-A8/Configuration.h .
-cp my_configuration_files/Anet-A8/Configuration_adv.h .
+cp my_configuration_files/AnetA8/Configuration.h .
+cp my_configuration_files/AnetA8/Configuration_adv.h .
 cd ..
 
 # compile and upload
