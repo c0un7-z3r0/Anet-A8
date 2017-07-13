@@ -2,18 +2,24 @@ G21 ;metric values
 G90 ;absolute positioning
 M82 ;set extruder to absolute mode
 M107 ;start with the fan off
-M117 Homing X/Y;
-G28 X0 Y0 ;move X/Y to min endstops
-M117 Homing Z;
-G28 Z0 ;move Z to min endstops
-M117 Setting bed to [first_layer_bed_temperature] C;
-M190 S[first_layer_bed_temperature];
+
+M104 S[first_layer_temperature] ; set extruder temp
+M140 S[first_layer_bed_temperature] ; set bed temp
+
+M117 Homing;
+G28 ; home all
+
+M117 Waiting for Bed Temp;
+M190 S[first_layer_bed_temperature] ; wait for bed temp
+
 M117 AutoLeveling;
 G29; auto level
-M117 Setting HE to [first_layer_temperature] C;
-M109 S[first_layer_temperature];
+
+M117 Waiting for Hotend Temp;
+M109 S[first_layer_temperature] ; wait for extruder temp
+
 M117 Cleaning...;
-G0 X220 Y55 F9000 ; Go to the side
+G0 X218 Y55 F9000 ; Go to the side
 G0 Z0.2 ; Drop to bed
 G92 E0 ; zero the extruded length
 G1 Y90 E25 F500 ; Extrude 25mm of filament in a 4cm line
@@ -21,4 +27,8 @@ G92 E0 ; zero the extruded length
 G1 E-1 F500 ; Retract a little
 G1 Y160 F4000 ; Quickly wipe away from the filament line
 G1 Z20 F9000 ; Move a bit up to disloge blobs
-M117 Printing... ;Put printing message on LCD screen
+G1 X220; Move just of the bed
+G1 Z0 F9000 ; Move to zero to remove last bits on extruder
+G1 X218; Move just of the bed
+G1 Z5 F9000 ; Move to zero to remove last bits on extruder
+M117 Start job ... ; Put printing message on LCD screen
